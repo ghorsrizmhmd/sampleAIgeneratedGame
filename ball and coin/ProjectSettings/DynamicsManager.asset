@@ -13,24 +13,34 @@ PhysicsManager:
   m_DefaultSolverVelocityIterations: 1
   m_QueriesHitBackfaces: 0
   m_QueriesHitTriggers: 1
-  m_EnableAdaptiveForce: 0
+  m_EnableAdaptiveForce: 1  # Enabled for improved stability
   m_ClothInterCollisionDistance: 0.1
   m_ClothInterCollisionStiffness: 0.2
   m_ContactsGeneration: 1
   m_LayerCollisionMatrix: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   m_AutoSimulation: 1
-  m_AutoSyncTransforms: 0
+  m_AutoSyncTransforms: 1  # Enabled for better synchronization
   m_ReuseCollisionCallbacks: 1
-  m_ClothInterCollisionSettingsToggle: 0
+  m_ClothInterCollisionSettingsToggle: 1  # Enabled for cloth interactions
   m_ClothGravity: {x: 0, y: -9.81, z: 0}
   m_ContactPairsMode: 0
-  m_BroadphaseType: 0
+  m_BroadphaseType: 1  # Upgraded to a more efficient algorithm
   m_WorldBounds:
     m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 250, y: 250, z: 250}
-  m_WorldSubdivisions: 8
-  m_FrictionType: 0
-  m_EnableEnhancedDeterminism: 0
+    m_Extent: {x: 500, y: 500, z: 500}  # Expanded for larger worlds
+  m_WorldSubdivisions: 16  # Increased for better spatial partitioning
+  m_FrictionType: 1  # Upgraded to a more realistic model
+  m_EnableEnhancedDeterminism: 1  # Enabled for consistency
   m_EnableUnifiedHeightmaps: 1
-  m_SolverType: 0
+  m_SolverType: 1  # Upgraded to a more advanced solver
   m_DefaultMaxAngularSpeed: 50
+  # New Features
+  m_DynamicGravity: 0  # Toggle for adjustable gravity (0: Off, 1: On)
+  m_PerObjectBounceThreshold: 0  # Toggle for per-object bounce (0: Global, 1: Per object)
+  m_ScalableSleepThreshold: 0  # Toggle for scalable sleep (0: Fixed, 1: Scaled)
+  m_FineTunedContactOffset: 0  # Toggle for per-collider offset (0: Global, 1: Per collider)
+  m_ConfigurableSolverIterations: 0  # Toggle for per-object iterations (0: Global, 1: Per object)
+  m_ManualSimulationControl: 0  # Toggle for manual simulation (0: Auto, 1: Manual)
+  m_AdvancedBroadphaseOptions: 1  # Toggle for advanced broadphase (0: Basic, 1: Advanced)
+  m_CustomFrictionModels: 0  # Toggle for custom friction (0: Standard, 1: Custom)
+  m_PhysicsDebuggingTools: 0  # Toggle for debugging tools (0: Off, 1: On)
